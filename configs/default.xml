@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="Housewifei"/>
+    <feature automatic="selected" name="Receptor"/>
+    <feature manual="selected" name="LightSensor"/>
+    <feature automatic="selected" name="HouseAutomation"/>
+    <feature manual="selected" name="AutomatedLight"/>
+</configuration>

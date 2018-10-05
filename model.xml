@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+    <properties/>
+    <struct>
+        <and abstract="true" mandatory="true" name="Housewifei">
+            <or abstract="true" mandatory="true" name="Receptor">
+                <feature name="LightSensor"/>
+                <feature name="MovementDetectionSensor"/>
+                <feature name="SoundSensor"/>
+                <alt abstract="true" name="Camera">
+                    <feature name="BasicCamera"/>
+                    <feature name="SecurityCamera"/>
+                    <feature name="InfraredCamera"/>
+                </alt>
+                <feature name="TemperatureSensor"/>
+                <feature name="IntegratedClock"/>
+                <feature name="FumesDetector"/>
+                <feature name="AirQualitySensor"/>
+                <feature name="WifiConnection"/>
+                <feature name="RadioReceiver"/>
+            </or>
+            <or abstract="true" mandatory="true" name="HouseAutomation">
+                <feature name="AutomatedLight"/>
+                <feature name="AutomatedDispenser"/>
+                <feature name="AutomatedHeater"/>
+                <feature name="AutomatedGate"/>
+                <feature name="AutomatedDoor"/>
+                <feature name="AutomatedHomeAppliance"/>
+                <feature name="AutomatedAlarm"/>
+                <feature name="AutomatedPhone"/>
+            </or>
+        </and>
+    </struct>
+    <constraints/>
+    <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+    <comments/>
+    <featureOrder userDefined="false"/>
+</featureModel>
