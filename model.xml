@@ -7,27 +7,38 @@
                 <feature name="LightSensor"/>
                 <feature name="MovementDetectionSensor"/>
                 <feature name="SoundSensor"/>
-                <alt abstract="true" name="Camera">
-                    <feature name="BasicCamera"/>
-                    <feature name="SecurityCamera"/>
-                    <feature name="InfraredCamera"/>
-                </alt>
                 <feature name="TemperatureSensor"/>
                 <feature name="IntegratedClock"/>
                 <feature name="FumesDetector"/>
                 <feature name="AirQualitySensor"/>
                 <feature name="WifiConnection"/>
                 <feature name="RadioReceiver"/>
+                <or abstract="true" name="Camera">
+                    <feature name="BasicCamera"/>
+                    <feature name="SecurityCamera"/>
+                    <feature name="InfraredCamera"/>
+                    <feature name="FacialRecognitionCamera"/>
+                </or>
             </or>
-            <or abstract="true" mandatory="true" name="HouseAutomation">
+            <or abstract="true" mandatory="true" name="HouseAutomationController">
                 <feature name="AutomatedLight"/>
-                <feature name="AutomatedDispenser"/>
                 <feature name="AutomatedHeater"/>
+                <feature name="AutomatedAirConditionner"/>
                 <feature name="AutomatedGate"/>
                 <feature name="AutomatedDoor"/>
-                <feature name="AutomatedHomeAppliance"/>
                 <feature name="AutomatedAlarm"/>
+                <feature name="AutomatedDispenser"/>
                 <feature name="AutomatedPhone"/>
+                <or abstract="true" name="AutomatedHomeAppliance">
+                    <feature name="AutomatedMicrowave"/>
+                    <feature name="AutomatedOven"/>
+                    <feature name="AutomatedWashingMachine"/>
+                    <feature name="AutomatedDryer"/>
+                    <feature name="AutomatedVaccum"/>
+                    <feature name="AutomatedWindowFan"/>
+                    <feature name="AutomatedDishWasher"/>
+                    <feature name="AutomatedLawnMower"/>
+                </or>
             </or>
         </and>
     </struct>
