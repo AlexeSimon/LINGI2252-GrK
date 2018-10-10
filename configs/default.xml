@@ -5,4 +5,5 @@
     <feature manual="selected" name="LightSensor"/>
     <feature automatic="selected" name="HouseAutomationController"/>
     <feature manual="selected" name="AutomatedLight"/>
+    <feature automatic="selected" name="Server"/>
 </configuration>
