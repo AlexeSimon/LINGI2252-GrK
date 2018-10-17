@@ -14,6 +14,7 @@
                 <feature name="WifiConnection"/>
                 <feature name="RadioReceiver"/>
                 <feature name="Button"/>
+                <feature name="Switch"/>
                 <or abstract="true" name="Camera">
                     <feature name="BasicCamera"/>
                     <feature name="SecurityCamera"/>
