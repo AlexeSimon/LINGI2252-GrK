@@ -3,7 +3,6 @@
     <feature automatic="selected" name="Housewifei"/>
     <feature automatic="selected" name="Receptor"/>
     <feature manual="selected" name="LightSensor"/>
-    <feature automatic="selected" name="HouseAutomationController"/>
-    <feature manual="selected" name="AutomatedLight"/>
+    <feature automatic="selected" name="Controller"/>
     <feature automatic="selected" name="Server"/>
 </configuration>

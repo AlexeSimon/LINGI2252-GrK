@@ -3,7 +3,7 @@
     <properties/>
     <struct>
         <and abstract="true" mandatory="true" name="Housewifei">
-            <or abstract="true" mandatory="true" name="Receptor">
+            <or abstract="true" name="Receptor">
                 <feature name="LightSensor"/>
                 <feature name="MovementDetectionSensor"/>
                 <feature name="SoundSensor"/>
@@ -13,6 +13,7 @@
                 <feature name="AirQualitySensor"/>
                 <feature name="WifiConnection"/>
                 <feature name="RadioReceiver"/>
+                <feature name="Button"/>
                 <or abstract="true" name="Camera">
                     <feature name="BasicCamera"/>
                     <feature name="SecurityCamera"/>
@@ -20,24 +21,25 @@
                     <feature name="FacialRecognitionCamera"/>
                 </or>
             </or>
-            <or abstract="true" mandatory="true" name="HouseAutomationController">
-                <feature name="AutomatedLight"/>
-                <feature name="AutomatedHeater"/>
-                <feature name="AutomatedAirConditionner"/>
-                <feature name="AutomatedGate"/>
-                <feature name="AutomatedDoor"/>
-                <feature name="AutomatedAlarm"/>
-                <feature name="AutomatedDispenser"/>
-                <feature name="AutomatedPhone"/>
-                <or abstract="true" name="AutomatedHomeAppliance">
-                    <feature name="AutomatedMicrowave"/>
-                    <feature name="AutomatedOven"/>
-                    <feature name="AutomatedWashingMachine"/>
-                    <feature name="AutomatedDryer"/>
-                    <feature name="AutomatedVaccum"/>
-                    <feature name="AutomatedWindowFan"/>
-                    <feature name="AutomatedDishWasher"/>
-                    <feature name="AutomatedLawnMower"/>
+            <or abstract="true" mandatory="true" name="Controller">
+                <feature name="ControlledLight"/>
+                <feature name="ControlledHeater"/>
+                <feature name="ControlledAirConditionner"/>
+                <feature name="ControlledGate"/>
+                <feature name="ControlledDoor"/>
+                <feature name="ControlledAlarm"/>
+                <feature name="ControlledDispenser"/>
+                <feature name="ControlledPhone"/>
+                <feature name="ControlledTelevision"/>
+                <or abstract="true" name="ControlledHomeAppliance">
+                    <feature name="ControlledMicrowave"/>
+                    <feature name="ControlledOven"/>
+                    <feature name="ControlledWashingMachine"/>
+                    <feature name="ControlledDryer"/>
+                    <feature name="ControlledVaccum"/>
+                    <feature name="ControlledWindowFan"/>
+                    <feature name="ControlledDishWasher"/>
+                    <feature name="ControlledLawnMower"/>
                 </or>
             </or>
             <feature mandatory="true" name="Server"/>
